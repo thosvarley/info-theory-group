@@ -13,4 +13,4 @@ Cover, T. M., & Thomas, J. A. (2012). Elements of Information Theory. John Wiley
 
 Bossomaier, T., Barnett, L., Harré, M., & Lizier, J. T. (2016). An Introduction to Transfer Entropy: Information Flow in Complex Systems. Springer.
 
- 
+Feldman (2002). Information Theory, Excess Entropy, and Computational Mechanics. http://hornacek.coa.edu/dave/Tutorial/notes.pdf 
