@@ -1,0 +1,16 @@
+% equation.txt
+\documentclass{standalone}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[charter]{mathdesign}
+\begin{document}
+\begin{minipage}{178pt}
+\begin{align*}
+  % Here's the equation!
+  f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+\end{align*}
+\end{minipage}
+\end{document}
