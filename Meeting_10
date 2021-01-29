@@ -43,7 +43,7 @@
     "Consequently, whenever you are calculating the entropy of a multi-state process, you need to be acutely aware that the number that you're getting is almost garunteed to be an underestimate of the true entropy of the process. Often this is not catastrophic: if what we're interested in is how entropy varies in different conditions, then a systematic underestimate is not a problem, so long as it is the same for both conditions. Several corrections for bias in the plugin entropy estimator exist, the simplest being:\n",
     "\n",
     "\\begin{equation}\n",
-    "    H_{C}(X) = H_{MLE}(X) - \\frac{M-1}{2S}\n",
+    "    H_{C}(X) = H_{MLE}(X) + \\frac{M-1}{2S}\n",
     "\\end{equation}\n",
     "\n",
     "Where $M$ is the number of states $X$ can take on (i.e. $|\\mathcal{X}|$) and $S$ is the number of samples in the dataset (i.e. the number of observations of $X$). Consequently, in the case of something like binary neural spiking data, where $M = 2$ and $S$ can verge on the tens of thousands, the bias term becomes negligable. If you have more states (such as if you were discretizing a continuous signal in $k$ bins), or you are looking at joint states (the number of which grows exponentially), the bias can quickly overwhelm the true entropy. If $M$ is too big and/or $S$ is too small, you can even end up wiht $H_{C}(X) < 0$, which we know is impossible and should be taken as an indicator that your data is far too poor for information-theoretic analysis.\n",
@@ -83,6 +83,26 @@
     "\n",
     "https://www.youtube.com/watch?v=4Ja2yXL88Os\n",
     "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "16"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2**4"
    ]
   }
  ],
